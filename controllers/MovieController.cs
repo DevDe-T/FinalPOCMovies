@@ -41,5 +41,19 @@ namespace finalPOCService.controllers
         {
             return Ok(functionality.addMovies(movie));
         }
+
+        [HttpDelete]
+        [Route("deleteMovie")]
+        public IActionResult deleteMovie(int id)
+        {
+            return Ok(functionality.deleteMovie(id));
+        }
+
+        [HttpPost]
+        [Route("editMovie")]
+        public IActionResult editMovie(Movie movie)
+        {
+            return Ok(functionality.editMovie(movie));
+        }
     }
 }

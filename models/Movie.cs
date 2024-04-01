@@ -13,7 +13,10 @@ namespace finalPOCService.models
         public string? movieName { get; set; }
 
         public int movieYear { get; set; }
+        public string? movieRating { get; set; } 
+        public string? movieDesc { get; set; } 
 
         public string? movieCast { get; set; }
+        public string? moviePosterLink { get; set; }
     }
 }

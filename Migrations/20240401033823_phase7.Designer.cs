@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using finalPOCService.database;
 
@@ -10,9 +11,11 @@ using finalPOCService.database;
 namespace finalPOCService.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240401033823_phase7")]
+    partial class phase7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,16 +82,10 @@ namespace finalPOCService.Migrations
                     b.Property<string>("movieCast")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("movieDesc")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("movieName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("moviePosterLink")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("movieRating")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("movieYear")

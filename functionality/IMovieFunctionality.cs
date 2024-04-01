@@ -14,5 +14,9 @@ namespace finalPOCService.functionality
         public Movie searchMovies(int mid);
 
         public int addMovies(Movie movie);
+
+        public int deleteMovie(int id);
+
+        public int editMovie(Movie movie);
     }
 }

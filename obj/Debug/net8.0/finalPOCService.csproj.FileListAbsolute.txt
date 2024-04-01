@@ -135,3 +135,4 @@ C:\userService\finalPOCService\obj\Debug\net8.0\refint\finalPOCService.dll
 C:\userService\finalPOCService\obj\Debug\net8.0\finalPOCService.pdb
 C:\userService\finalPOCService\obj\Debug\net8.0\finalPOCService.genruntimeconfig.cache
 C:\userService\finalPOCService\obj\Debug\net8.0\ref\finalPOCService.dll
+C:\userService\finalPOCService\obj\Debug\net8.0\finalPOCService.sourcelink.json
